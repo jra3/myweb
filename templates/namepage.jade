@@ -1,0 +1,26 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="chrome=1")
+    title= locals.title
+    link(rel="stylesheet", href="/styles/styles.css")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+  body
+    div(class="wrapper")
+      header
+        h1= locals.author.name
+        p= locals.author.title
+        a(href="https://github.com/jra3") View My GitHub Profile
+      section
+        != page.html
+
+    script(type="text/javascript").
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+    script(type="text/javascript").
+      try {
+        var pageTracker = _gat._getTracker("UA-38172733-1");
+        pageTracker._trackPageview();
+      } catch(err) {}

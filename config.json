@@ -1,0 +1,13 @@
+{
+  "locals": {
+    "title": "jra3",
+    "url": "http://jra3.github.io",
+    "author": {
+      "name": "john allen",
+      "title": "eternal amateur"
+    }
+  },
+  "jade": {
+    "pretty": true
+  }
+}
